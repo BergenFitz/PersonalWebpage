@@ -39,6 +39,12 @@
     margin-top: 1em;
   }
 
+  p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 3em;
+  }
+
   .card {
     margin-left: 1em;
     margin-right: 1em;

@@ -1,1 +1,88 @@
 @import url(Navbar.css);
+
+  .item {
+    display: flex;
+    max-width: 420px;
+    background-color: white;;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5em;
+    -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+    box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  }
+
+  .proSum {
+    color: var(--color);
+    width: 60%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  .jobSec {
+    /*text-align: center;*/
+    color: var(--color);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  tr {
+    border:1px solid black;
+  }
+
+  td{
+    border:1px solid black;
+    border-radius: 2em;
+  }
+
+  .job {
+    margin-left: 1em;
+  }
+
+  .job_name {
+    color: black;
+    text-decoration: none; 
+    font-size: x-large;
+  }
+
+  .job_title {
+    display: inline-block;
+    font-size: large;
+  }
+
+  .eduSec {
+    /*text-align: center;*/
+    color: var(--color);
+    width: 60%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+
+  .eList {
+    list-style-type:none;
+  }
+
+  .school_name {
+    display: inline;
+    font-size: x-large;
+  }
+
+  .major {
+    display: inline;
+    font-size: large;
+  }
+
