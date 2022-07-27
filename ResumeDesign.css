@@ -141,3 +141,7 @@ input:checked ~ .acc-content{
 .lang {
   margin-left: 1em;
 }
+
+.res {
+  margin-left: 1em;
+}

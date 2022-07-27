@@ -1,1 +1,23 @@
 @import url(Navbar.css);
+
+.webbody {
+    min-height: 100vh;
+    display: flex;
+}
+
+.mediaDisplay {
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+tr {
+    border:1px solid black;
+    background-color: aliceblue;
+  }
+
+  td{
+    border:1px solid black;
+    border-radius: 2em;
+    background-color: aliceblue;
+  }
