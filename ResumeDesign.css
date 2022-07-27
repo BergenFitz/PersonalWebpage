@@ -1,19 +1,6 @@
 @import url(Navbar.css);
 
-  .item {
-    display: flex;
-    max-width: 420px;
-    background-color: white;;
-    flex-direction: column;
-    align-items: center;
-    border-radius: .5em;
-    -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-    -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-    box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
-  }
-
   .leftside {
-    background-color: aqua;
     float: left;
     width: 60%;
   }
@@ -23,16 +10,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*margin-right: 1em;*/
     margin-left: 1em;
   }
 
   .jobSec {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
     justify-content: center;
-    /*margin-right: 1em;*/
     margin-left: 1em;
   }
 
@@ -67,7 +51,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*margin-right: 1em;*/
     margin-left: 1em;
   }
 
@@ -86,9 +69,71 @@
   }
 
   .dropdown {
-    float: right;
-    width: 40%;
-    min-height: 164.5vh;
-    background-color: black;
+    /*float: right;*/
+    position: fixed;
+    width: 30%;
+    margin-top: 10vh;
+    min-height: 100vh;
+    margin-left: 65%;
   }
 
+  .accordions {
+    border-radius: 0.5em;
+    overflow: hidden;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+  }
+
+  .acc-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: black;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+.accordion:first-child {
+  border-bottom: 2px solid;
+}
+
+.acc-label:hover {
+  background: gray;
+}
+
+.acc-label::after {
+  content: ">";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.acc-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: #DFF6FF;
+  transition: all 0.4s ease;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+input:checked + .acc-label::after {
+  transform: rotate(90deg);
+}
+
+input:checked ~ .acc-content{
+  max-height: 100vh;
+  padding: 1em;
+}
