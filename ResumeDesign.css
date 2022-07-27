@@ -137,3 +137,7 @@ input:checked ~ .acc-content{
   max-height: 100vh;
   padding: 1em;
 }
+
+.lang {
+  margin-left: 1em;
+}
